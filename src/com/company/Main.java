@@ -47,7 +47,9 @@ public class Main {
         double adunarea1=20+impartirea;
         System.out.println(adunarea1);
         //d. 5 + 15 / 3 * 2 - 8 % 3
-        
+        int d=5+15/3*2-8%3;
+        System.out.println(d);
+
 
 
 
