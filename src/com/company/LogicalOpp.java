@@ -44,4 +44,41 @@ public class LogicalOpp {
             return "The number is lower than 3";
         } return "The number is equal to 3  "; // aceasta conditie nu era in enunt, si daca nr era 3 prog nu facea nimic
     }
+
+    public boolean isNumberEven (int numarul){
+        if (numarul%2 == 0)
+            return true;
+        else
+            return false;
+    }
+
+    public boolean isEligibleToVote (int varsta){
+        if (varsta > 18)
+            return true;
+        else
+            return false;
+    }
+
+    public int biggestNumber (int primulNumar, int alDoileaNumar, int alTreileaNumar){
+        if ((primulNumar>alDoileaNumar) && (primulNumar>alTreileaNumar))
+            return primulNumar;
+        else
+            if ((alDoileaNumar>primulNumar) && (alDoileaNumar>alTreileaNumar))
+                return alDoileaNumar;
+            else if ((alTreileaNumar>primulNumar) && (alTreileaNumar>alDoileaNumar))
+                return alTreileaNumar;
+                 else if ((primulNumar>alDoileaNumar) || (primulNumar>alTreileaNumar))
+                          return primulNumar;
+                      else if ((alDoileaNumar>primulNumar) || (alDoileaNumar>alTreileaNumar))
+                               return alDoileaNumar;
+                           else if ((alTreileaNumar>primulNumar) || (alTreileaNumar>alDoileaNumar))
+                                return alTreileaNumar;
+                                else return primulNumar;
+    }
+
+
+
+
+
+
 }

@@ -172,6 +172,35 @@ public class Main {
          foloseasca concatenarea stringului "The number is:" cu numarul de la parametru,
          ci sa se scrie intreg textul cu tot cu numar pentru fiecare caz din Switch-Case  */
 
+        System.out.println("Empty momentan :D ");
+
+
+
+        /*9. Creati o metoda care sa se numeasca isNumberEven. Metoda trebuie sa primeasca ca parametru un numar,
+         si sa returneze adevarat sau fals. Daca numarul e par sa returneze true iar daca e impar sa returnese false.*/
+
+        System.out.println(op.isNumberEven(362));
+
+        /*10. Creati o metoda care sa se numeasca isEligibleToVote. Metoda sa primeasca ca si parametru un numar,
+        care sa reprezinte varsta, iar metoda sa iti zica daca daca persoana are drept de vot.
+        Daca varsta e peste 18, sa se returneze true iar daca nu, sa returneze false.  */
+
+        System.out.println(op.isEligibleToVote(18));
+
+        //11. Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
+
+        System.out.println("Cel mai mare numar este: "+op.biggestNumber(4100,410,410));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
