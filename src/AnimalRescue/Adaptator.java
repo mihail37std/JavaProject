@@ -2,14 +2,91 @@ package AnimalRescue;
 
 public class Adaptator {
 
-    public String name = "Maria";
-    public int age = 12;
-    public long buget = 187490456L;
-    public int height = 120;
-    public float weight = 45.5F;
-    public String hair = "Long and Brown";
-    public String eyes = "green";
-    public String gender = "female";
+    private String name;
+    private int age;
+    private long buget;
+    private int height;
+    private float weight;
+    private String hair;
+    private String eyes;
+    private String gender;
+
+
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name ;
+    }
+
+
+    public int getAge(){
+        return age;
+    }
+    public void setAge (int age){
+        this.age = age;
+    }
+
+    public long getBuget(){
+        return buget;
+    }
+    public void setBuget (long age){
+        this.buget = buget;
+    }
+
+
+    public int getHeight(){
+        return height;
+    }
+    public void setHeight (int height){
+        this.height = height;
+    }
+
+    public float getWeight (){
+        return weight;
+    }
+    public void setWeight (float weight){
+        this.weight = weight;
+    }
+
+
+    public String getHair (){
+        return hair;
+    }
+    public void setHair (String hair){
+        this.hair = hair;
+    }
+
+
+    public String getEyes (){
+        return eyes;
+    }
+    public void setEyes (String eyes){
+        this.eyes = eyes;
+    }
+
+
+    public String getGender (){
+        return gender;
+    }
+    public void setGender (String gender){
+        this.gender = gender;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public void play(){
         System.out.println("Playing with the dog");
