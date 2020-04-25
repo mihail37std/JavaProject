@@ -110,6 +110,41 @@ public class AppMain {
         System.out.println(mancarea1.getStock());
         System.out.println(mancarea1.getColor());
         System.out.println(mancarea1.getConsistency());
+        System.out.println(" ");
+
+        //--------------------------------------------------------
+
+        Cat cat1= new Cat();
+        cat1.setName("Buburuza");
+        cat1.setAge(1);
+        cat1.setColor("White");
+        cat1.setRace("Pisica persana");
+        cat1.setChipNr(259687);
+        cat1.setWeight(9.5F);
+        cat1.setEyesColor("black");
+        cat1.setGendre("Female");
+        cat1.setHealthLevel(10);
+        cat1.setHungerLevel(10);
+        cat1.setMoodLevel(10);
+        cat1.setFavFood("Wiskas");
+        cat1.setFavActivity("playing with the clew");
+
+        System.out.println(cat1.getName());
+        System.out.println(cat1.getAge());
+        System.out.println(cat1.getColor());
+        System.out.println(cat1.getRace());
+        System.out.println(cat1.getChipNr());
+        System.out.println(cat1.getWeight());
+        System.out.println(cat1.getEyesColor());
+        System.out.println(cat1.getGendre());
+        System.out.println(cat1.getHealthLevel());
+        System.out.println(cat1.getHungerLevel());
+        System.out.println(cat1.getMoodLevel());
+        System.out.println(cat1.getFavFood());
+        System.out.println(cat1.getFavActivity());
+        System.out.println(" ");
+
+
 
         /*System.out.println(myObject.name);
         System.out.println(myObject.age);
