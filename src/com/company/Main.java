@@ -172,8 +172,7 @@ public class Main {
          foloseasca concatenarea stringului "The number is:" cu numarul de la parametru,
          ci sa se scrie intreg textul cu tot cu numar pentru fiecare caz din Switch-Case  */
 
-        System.out.println("Empty momentan :D ");
-
+        op.printNumber(10);
 
 
         /*9. Creati o metoda care sa se numeasca isNumberEven. Metoda trebuie sa primeasca ca parametru un numar,
@@ -189,7 +188,7 @@ public class Main {
 
         //11. Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
 
-        System.out.println("Cel mai mare numar este: "+op.biggestNumber(4100,410,410));
+        System.out.println("Cel mai mare numar este: "+op.biggestNumber(489,410,410));
 
 
 

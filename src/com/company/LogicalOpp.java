@@ -35,6 +35,46 @@ public class LogicalOpp {
             return "The forecast snow is(cm): "+nr;
     }
 
+    public void printNumber(int caseNumber) {
+        switch (caseNumber) {
+            case 1:
+                System.out.println("The number is 1");
+                break;
+            case 2:
+                System.out.println("The number is 2");
+                break;
+            case 3:
+                System.out.println("The number is 3");
+                break;
+            case 4:
+                System.out.println("The number is 4");
+                break;
+            case 6:
+                System.out.println("The number is 6");
+                break;
+            case 7:
+                System.out.println("The number is 7");
+                break;
+            case 8:
+                System.out.println("The number is 8");
+                break;
+            case 9:
+                System.out.println("The number is 9");
+                break;
+            case 10:
+                System.out.println("The number is 10");
+                break;
+            case 11:
+                System.out.println("The number is 11");
+                break;
+            default:
+                System.out.println("The number you entered is inccorect ");
+        }
+
+    }
+
+
+
     public String verifyNumber (int nr){
         if ((nr >3) && (!(nr == 4))){
             return "The number is greater than 3 and not equal to 4";
