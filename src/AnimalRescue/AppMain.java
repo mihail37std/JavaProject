@@ -6,7 +6,7 @@ public class AppMain {
 
         // Animal myObject = new Animal();
 
-        Animal firstDog = new Animal();
+        Dog firstDog = new Dog();
 
         firstDog.setName("Aurel");
         firstDog.setAge(3);
@@ -71,7 +71,7 @@ public class AppMain {
 
         //-------------------------------------------------------------
 
-        Adaptator girl = new Adaptator();
+        Girl girl = new Girl();
 
         girl.setName("Maria");
         girl.setAge(12);
@@ -94,7 +94,7 @@ public class AppMain {
 
         //-------------------------------------------------------
 
-        Food mancarea1 = new Food();
+        DogFood mancarea1 = new DogFood();
 
         mancarea1.setName("Royal Canin Starter Maxi");
         mancarea1.setPrice(101);
@@ -144,63 +144,27 @@ public class AppMain {
         System.out.println(cat1.getFavActivity());
         System.out.println(" ");
 
+        // ----------------------------------------------------------------------------------
+
+        CatFood mancarea2 = new CatFood();
+
+        mancarea2.setName("Wiskas ");
+        mancarea2.setPrice(120);
+        mancarea2.setQuantity(8);
+        mancarea2.setStock(50);
+        mancarea2.setColor("Brownish");
+        mancarea2.setConsistency("Consistenta moale");
 
 
-        /*System.out.println(myObject.name);
-        System.out.println(myObject.age);
-        System.out.println(myObject.chipNr);
-        System.out.println(myObject.color);
-        System.out.println(myObject.eyesColor);
-        System.out.println(myObject.favActivity);
-        System.out.println(myObject.favFood);
-        System.out.println(myObject.gendre);
-        System.out.println(myObject.healthLevel);
-        System.out.println(myObject.hungerLevel);
-        System.out.println(myObject.leash);
-        System.out.println(myObject.moodLevel);
-        System.out.println(myObject.race);
-        System.out.println(myObject.tail);
-        System.out.println(myObject.teeth);
-        System.out.println(myObject.weight);
-        System.out.println("    ");
+        System.out.println(mancarea2.getName());
+        System.out.println(mancarea2.getPrice());
+        System.out.println(mancarea2.getQuantity());
+        System.out.println(mancarea2.getStock());
+        System.out.println(mancarea2.getColor());
+        System.out.println(mancarea2.getConsistency());
+        System.out.println(" ");
 
-        RelaxingActivity relaxAct = new RelaxingActivity();
 
-        System.out.println(relaxAct.name);
-        System.out.println("    ");
-
-        Veterinarian vet = new Veterinarian();
-
-        System.out.println(vet.accesories);
-        System.out.println(vet.age);
-        System.out.println(vet.name);
-        System.out.println(vet.price);
-        System.out.println(vet.specialization);
-        System.out.println("    ");
-
-        Adaptator girl = new Adaptator();
-
-        System.out.println(girl.name);
-        System.out.println(girl.age);
-        System.out.println(girl.buget);
-        System.out.println(girl.eyes);
-        System.out.println(girl.gender);
-        System.out.println(girl.hair);
-        System.out.println(girl.height);
-        System.out.println(girl.weight);
-        System.out.println("     ");
-
-        DogFood royal = new DogFood();
-
-        System.out.println(royal.name);
-        System.out.println(royal.color);
-        System.out.println(royal.price);
-        System.out.println(royal.quantity);
-        System.out.println(royal.consistency);
-        System.out.println(royal.stock);
-        System.out.println("    ");
-
-         */
 
 
 

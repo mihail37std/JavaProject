@@ -1,10 +1,9 @@
 package AnimalRescue;
 
-public class Adaptator {
+public class AnimalRescuer {
 
     private String name;
     private int age;
-    private long buget;
     private int height;
     private float weight;
     private String hair;
@@ -25,13 +24,6 @@ public class Adaptator {
     }
     public void setAge (int age){
         this.age = age;
-    }
-
-    public long getBuget(){
-        return buget;
-    }
-    public void setBuget (long age){
-        this.buget = buget;
     }
 
 
@@ -73,56 +65,28 @@ public class Adaptator {
         this.gender = gender;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public void play(){
-        System.out.println("Playing with the dog");
+        System.out.println("Playing...");
     }
-
-    public void buy (){
-        System.out.println("Buying food");
-    }
-
     public void rescue (){
-        System.out.println("Rescue the dog");
+        System.out.println("Rescuing...");
     }
 
     public void feed (){
-        System.out.println("feed the dog with food");
+        System.out.println("feeding...");
     }
 
     public void applyMedicalTreatment (){
-        System.out.println("Aplying medical treatment");
+        System.out.println("Aplying medical treatment...");
     }
 
     public void sleep (){
         System.out.println("zZzzzz....");
     }
 
-    public void goToVet (){
-        System.out.println("go to vet with the dog");
-    }
-
     public void walking (){
-        System.out.println("walking in the parc");
+        System.out.println("walking ...");
     }
-
-
-
-
 
 
 

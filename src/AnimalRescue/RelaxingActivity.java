@@ -14,6 +14,6 @@ public class RelaxingActivity {
 
 
     public void play (){
-        System.out.println("Fetch the ball...");
+        System.out.println("Playing...");
     }
 }

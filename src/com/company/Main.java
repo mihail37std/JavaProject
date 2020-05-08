@@ -1,5 +1,7 @@
 package com.company;
 
+import java.sql.SQLOutput;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -189,6 +191,165 @@ public class Main {
         //11. Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
 
         System.out.println("Cel mai mare numar este: "+op.biggestNumber(489,410,410));
+
+
+        System.out.println("------------------------------------------------\n");
+
+        // TEMA LAB 4
+
+        System.out.println("Java For Loops \n");
+
+        /*1. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
+       Metoda sa verifice numarul primit, si sa afiseze in consola o numaratoare pana la 100,
+        pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei,
+        deoarece metoda afiseaza, nu returneaza.  */
+
+        System.out.println("Ex 1: \n");
+        op.printPrintForLoop(97);
+        System.out.println("Ex 2: \n");
+
+        /* 2. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
+         Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la -100,
+          pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei,
+          deoarece metoda afiseaza, nu returneaza    */
+
+        op.printPrintForLoop2(-89);
+        System.out.println("Ex 3: \n");
+
+        /*3.Creati o metoda in clasa LogicalOp, care sa primeasca doi parametrii de tip numar.
+        Metoda sa afiseze o numaratoare intre cele doua numere primite, pornind de la primul parametru primit,
+        pana la cel de-al doilea
+        (ex: daca int x e primul parametru iar int y  este cel de-al doilea, numaratoarea sa se faca de la x, la y. */
+
+        op.printTwoParameters(4,9);
+        System.out.println("Ex 4: \n");
+
+        /*4. Creati o metoda in clasa LogicalOp, care sa primeasca doi parametrii de tip numar.
+         Metoda trebuie sa verifice care dintre cele doua numere este mai mare, si sa execute o numaratoare
+         crescatoare de la cel mai mic la cel mai mare. (ex: daca int x e primul parametru iar int y  este
+         cel de-al doilea, daca x  este mai mare decat y,  atunci numaratoarea sa fie de la y la x) */
+
+        op.printTwoParameters2(5,2);
+        System.out.println("Ex 5: \n");
+
+        //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
+
+        op.printEven();
+        System.out.println("Ex 6: \n");
+
+
+        //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+
+        op.printOdd();
+        System.out.println("Ex 7: \n");
+
+
+        /*7. Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
+         Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru,
+         iar la final sa returneze rezultatul.   */
+
+        op.addForNumbers(90);
+        System.out.println("Ex 8: \n");
+
+        /*8.Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
+         Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru,
+         si sa calculeze media numerelor. La final, metoda sa returneze media */
+
+        System.out.println(op.addForNumbers2(95)+"\n");
+        System.out.println("Ex 9: \n");
+
+
+        //9. Creat o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
+
+        op.theStarsSchemee();
+
+        System.out.println("Java While Loop\n");
+        System.out.println("Ex 1: \n");
+
+        /* 1. Creati o metoda in clasa Calculator, care sa primeste un numar ca si parametru.
+        Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la 100,
+        pornind de la numarul primit ca si parametru.*/
+
+        calc.countTo100(50);
+        System.out.println("Ex 2: \n");
+
+        /* 2. Creati o metoda in clasa Calculator, care sa primeste un numar ca si parametru.
+         Metoda sa verifice numrul primit, si sa afiseze in consola o numaratoare pana la -100,
+         pornind de la numarul primit ca si parametru.*/
+
+        calc.countToMinus100(-80);
+        System.out.println("Ex 3: \n");
+
+        /* 3.Creati o metoda in clasa Calculator, care sa primeste doi parametrii de tip numar.
+         Metoda sa afiseze o numaratoare intre cele doua numere primite, pornind de la primul parametru primit,
+         pana la cel de-al doilea(ex: daca int x e primul parametru iar int y  este cel de-al doilea,
+         numaratoarea sa se faca de la x, la y. */
+
+        calc.countXToY(2,9);
+        System.out.println("Ex 4: \n");
+
+        /* 4. Creati o metoda in clasa Calculator, care sa primeste doi parametrii de tip numar.
+         Metoda trebuie sa verifice care dintre cele doua numere este mai mare, si sa execute o numaratoare crescatoare
+         de la cel mai mic la cel mai mare.(ex: daca int x e primul parametru iar int y  este cel de-al doilea,
+         daca x  este mai mare decat y,  atunci numaratoarea sa fie de la y la x).   */
+
+        calc.countXtoY2(5,2);
+        System.out.println("Ex 5: \n");
+
+        // 5.Creati o metoda in clasa Calculator care sa afiseze toate numerele pare de la 1 la 100.
+
+        calc.whileEven();
+        System.out.println("Ex 6: \n");
+
+        //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+
+        calc.whileOdd();
+        System.out.println("Ex 7: \n");
+
+        /* 7. Creati o metoda care sa adune toate numerele din intervalul 111 si 8899. Sa se afiseze suma totala,
+         iar dupa aceea sa se calculeze si afiseze media numerelor din acel interval. Introduceti o variabila int count
+         in metoda, pentru a numara toate numerele din interval. */
+
+        calc.whileSum111And8899();
+        System.out.println("Ex 8: \n");
+
+        /* 8.Creati o metoda care sa primeasca doi parametrii de tip numar, si sa returneze media numerelor
+        divizibile cu 7, din acel interval*/
+
+        System.out.println(calc.whilePrime7(1,21)+"\n");
+        System.out.println("Ex 9: \n");
+
+        // 9.Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
+
+        calc.fibonacci();
+        System.out.println("Ex 10: \n");
+
+
+        /* 10. Creati o metoda numita CozaLozaWoza
+        Metoda va afisa:
+        - numerele de la 1 la 11
+        - 11 numere pe linie
+        - se va afisa Coza pentru numerele care sunt multiplu de 3 (1 2 Coza 4)
+        - se va afisa Loza pentru numerele care sunt multiplu de 5 (2 3 4 Loza 6)
+        - se va afisa Woza pentru numerele care sunt multiplu de 7 (4 5 6 Woza 8)
+        - se va afisa CozaLoza pentru numerele care sunt multiplu de 3 SI 5
+        - se va afisa CozaWoza pentru multiplu de 3 SI 7
+        - se va afisa WozaLoza pentru multiplu de 5 SI 7
+        - se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7 */
+
+        calc.cozaLozaWoza();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

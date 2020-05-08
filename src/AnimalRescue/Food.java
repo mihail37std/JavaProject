@@ -60,7 +60,7 @@ public class Food {
 
 
     public void nourish (){
-        System.out.println("nourishing the dog");
+        System.out.println("nourishing...");
     }
 
     public void healt (){
