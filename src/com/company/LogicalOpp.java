@@ -117,14 +117,14 @@ public class LogicalOpp {
     }
 
 
-    public void printPrintForLoop (int x){
+    public void printForLoop (int x){
         for (x=x ; x <= 100; x++){
             System.out.print(x+" ");
         }
         System.out.println("\n");
     }
 
-    public void printPrintForLoop2 (int x){
+    public void printForLoop2 (int x){
         for (x=x ; x >= -100; x--){
             System.out.print(x+" ");
         }
@@ -161,20 +161,20 @@ public class LogicalOpp {
 
     public void printOdd (){
         for (int x=1; x<=100 ; x++) {
-            if (x%2==1){
+            if (x%2!=0){
                 System.out.print(x+" ");
             }
         }
         System.out.println("\n");
     }
 
-    public void addForNumbers (int x){
+    public int addForNumbers (int x){
         int sum=0;
         int count = 0;
         for (x=x; x<100;x++){
             sum = sum +  x  ;
         }
-        System.out.println(sum+"\n");
+        return sum;
     }
 
     public float addForNumbers2 (int x){

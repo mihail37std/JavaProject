@@ -205,7 +205,7 @@ public class Main {
         deoarece metoda afiseaza, nu returneaza.  */
 
         System.out.println("Ex 1: \n");
-        op.printPrintForLoop(97);
+        op.printForLoop(97);
         System.out.println("Ex 2: \n");
 
         /* 2. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
@@ -213,7 +213,7 @@ public class Main {
           pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei,
           deoarece metoda afiseaza, nu returneaza    */
 
-        op.printPrintForLoop2(-89);
+        op.printForLoop2(-89);
         System.out.println("Ex 3: \n");
 
         /*3.Creati o metoda in clasa LogicalOp, care sa primeasca doi parametrii de tip numar.
@@ -248,7 +248,7 @@ public class Main {
          Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru,
          iar la final sa returneze rezultatul.   */
 
-        op.addForNumbers(90);
+        System.out.println(op.addForNumbers(90));
         System.out.println("Ex 8: \n");
 
         /*8.Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
@@ -316,7 +316,7 @@ public class Main {
         /* 8.Creati o metoda care sa primeasca doi parametrii de tip numar, si sa returneze media numerelor
         divizibile cu 7, din acel interval*/
 
-        System.out.println(calc.whilePrime7(1,21)+"\n");
+        System.out.println(calc.whilePrime7(1,49)+"\n");
         System.out.println("Ex 9: \n");
 
         // 9.Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
