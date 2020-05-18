@@ -1,5 +1,7 @@
 package Practice;
 
+import com.company.LogicalOpp;
+
 import java.util.Arrays;
 
 public class PracticeJavaArrays {
@@ -129,7 +131,16 @@ public class PracticeJavaArrays {
         }
         System.out.println("\n");
 
-        // ex 2
+
+
+        LogicalOpp opLogic = new LogicalOpp();
+
+
+
+
+
+
+
     }
 }
 

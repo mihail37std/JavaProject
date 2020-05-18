@@ -7,14 +7,61 @@ public class Calculator {
         return rezultat;
     }
 
+    public int adunare(int primulNumar, int alDoileaNumar, int alTreileaNumar){
+        int rezultat = primulNumar + alDoileaNumar + alTreileaNumar;
+        return rezultat;
+    }
+
+    public double adunare(int primulNumar, double alDoileaNumar){
+        double rezultat = primulNumar + alDoileaNumar;
+        return rezultat;
+    }
+
+    public double adunare(double primulNumar, double alDoileaNumar){
+        double rezultat = primulNumar + alDoileaNumar;
+        return rezultat;
+    }
+
+
 
     public int scadere(int primulNumar, int alDoileaNumar){
         int rezultat = primulNumar - alDoileaNumar;
         return rezultat;
     }
 
+    public int scadere(int primulNumar, int alDoileaNumar, int alTreileaNumar){
+        int rezultat = primulNumar - alDoileaNumar - alTreileaNumar;
+        return rezultat;
+    }
+
+    public double scadere(int primulNumar, double alDoileaNumar){
+        double rezultat = primulNumar - alDoileaNumar;
+        return rezultat;
+    }
+
+    public double scadere(double primulNumar, double alDoileaNumar){
+        double rezultat = primulNumar - alDoileaNumar;
+        return rezultat;
+    }
+
+
     public int inmultire (int primulNumar, int alDoileaNumar){
         int rezultat = primulNumar * alDoileaNumar;
+        return rezultat;
+    }
+
+    public int inmultire (int primulNumar, int alDoileaNumar,int alTreileaNumar){
+        int rezultat = primulNumar * alDoileaNumar * alTreileaNumar;
+        return rezultat;
+    }
+
+    public double inmultire (int primulNumar, double alDoileaNumar){
+        double rezultat = primulNumar * alDoileaNumar;
+        return rezultat;
+    }
+
+    public double inmultire (double primulNumar, double alDoileaNumar){
+        double rezultat = primulNumar * alDoileaNumar;
         return rezultat;
     }
 
@@ -22,6 +69,22 @@ public class Calculator {
         double rezultat = primulNumar / alDoileaNumar;
         return rezultat;
     }
+
+    public int impartire (int primulNumar, int alDoileaNumar) {
+        int rezultat = primulNumar / alDoileaNumar;
+        return rezultat;
+    }
+
+    public double impartire (int primulNumar, double alDoileaNumar) {
+        double rezultat = primulNumar / alDoileaNumar;
+        return rezultat;
+    }
+
+    public double impartire (double primulNumar, int alDoileaNumar) {
+        double rezultat = primulNumar / alDoileaNumar;
+        return rezultat;
+    }
+
 
     public double mediaAtreiNumere (double primulNumar, double alDoileaNumar, double alTreileaNumar){
         double rezultat = (primulNumar+alDoileaNumar+alTreileaNumar)/3;

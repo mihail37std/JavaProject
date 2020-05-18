@@ -1,6 +1,7 @@
 package com.company;
 
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class Main {
 
@@ -338,6 +339,170 @@ public class Main {
         - se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7 */
 
         calc.cozaLozaWoza();
+        System.out.println("\n");
+
+        // --------------------------------------------------------------------------------
+
+        System.out.println("Lab 13 : Java Arrays \n");
+
+        // 1.In proiectul de Calculator, in clasa Calculator, supraincarcati toate metodele
+        // conform principiului polimorfismului
+
+        System.out.println("Ex 1: \n");
+        System.out.println("Adunarea : ");
+        System.out.println(calc.adunare(1,1,1));
+        System.out.println(calc.adunare(2.3,4.5));
+        System.out.println(calc.adunare(5, 3.7));
+
+        System.out.println("\nScaderea: ");
+        System.out.println(calc.scadere(10,3,1));
+        System.out.println(calc.scadere(8,5.5));
+        System.out.println(calc.scadere(6.8,7.9));
+
+        System.out.println("\nInmultirea: ");
+        System.out.println(calc.inmultire(5,7,9));
+        System.out.println(calc.inmultire(10,6.5));
+        System.out.println(calc.inmultire(8.7,6.9));
+
+        System.out.println("\nImpartirea: ");
+        System.out.println(calc.impartire(87.5,98.3));
+        System.out.println(calc.impartire(58,6.5));
+        System.out.println(calc.impartire(8.5,2));
+        System.out.println("\nEx 2: \n");
+
+        /*2.  In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii,
+         valorile de la 1 la 100. Sa se afiseze progresul in consola pe tot parcursul. */
+
+        int[] myArray =op.getArrayHundred();
+        op.printArray(myArray);
+        System.out.println("\n\nEx 3: \n");
+
+        /*3. Creati o metoda care primeasca un parametru de tip array de numere intregi gol,
+        si sa il returneze populat cu toate valorile pare de la 1 la 100.
+         Apelati metoda in main() pentru a verifica daca functioneaza.
+        Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla. */
+
+        int[] arrayEven = new int[100];
+        op.getArrayEven(arrayEven);
+        System.out.println("\n\nEx 4: \n");
+
+        /*4. Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori.
+         Metoda sa calculeze si sa returneze media numerelor din array.
+         Apelati metoda in main() pentru a verifica daca functioneaza.*/
+
+        int[] myArray2 = {10,24,39,45,59,67,190};
+        System.out.println(op.getArrayAvarage(myArray2));
+        System.out.println("\n\nEx5:\n");
+
+        /*5. Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori,
+         si un parametru de tip String. Metoda sa verifice daca valoarea string-ului primit se regaseste
+         in array-ul primit, iar daca da sa returneze true iar daca nu, sa returneze false.*/
+
+        System.out.println(op.checkStringInAString(new String[]{"Mama", "Tata", "si", "Bunica", "Calul", "Floarea",
+                                                    "si", "Pisica"},"Tata"));
+        System.out.println("\nEx6:\n");
+
+        /*6. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+        si un parametru de tip numar. Metoda sa verifice daca numarul primit se afla in array-ul primit,
+        si daca da, atunci sa returneze pozitia pe care se afla numarul. */
+
+        System.out.println(op.checkArrayPosition(new int[]{3, 4, 5, 10, 8, 9},11));
+        System.out.println("\nEx 7:\n");
+
+        //7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
+
+        op.arrayScheme();
+        System.out.println("\nEx 8:\n");
+
+        /*8.Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+         si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da,
+          sa returneze array-ul primit, fara acel numar. */
+
+        op.printArray(op.returnArrayWithoutNr(new int[]{44,45,32,4,8,90},45));
+        System.out.println("\n\nEx 9:\n");
+
+        /*9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
+         Apelati metoda in main() pentru a verifica daca functioneaza. */
+
+        System.out.println("Al 2-lea cel mai mic nr din array este: "+op.secondSmallArrayNr(new int[]{100,8,12,20,56}));
+        System.out.println("\nEx 10:\n");
+
+        /*10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
+         Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.   */
+
+        int [] populatedArray = {4,5,23,31,44,56,79};
+        int [] emptyArrayEx10 = new int[populatedArray.length];
+        op.copyArray(populatedArray,emptyArrayEx10);
+        op.printArray(emptyArrayEx10);
+
+
+
+
+        System.out.println("\n\nTEMA OPTIONALA\n");
+
+        // Ex 1 este identic cu ex 9 fiind rezolvat deja
+
+        System.out.println("\nEx2:\n");
+
+        //2. Creati o metoda care insereze un element pe o pozitie specifica intr-un array.
+
+        op.insertElementInArray(new int[]{25, 14, 56, 15, 36, 56, 77, 18, 29, 49},2,5);
+        // Aici doar daca se sterge ultimul element din array , am reusit sa fac o metoda....sa insereze
+        //si alt numar , si sa afiseze tot array-ul original plus numarul respectiv, nu stiu cum sa fac :)
+        System.out.println("\nEx3:\n");
+
+        //3. Creati o metoda care sa gaseasca cel mai mare si cel mai mic numar dintr-un array.
+
+        op.findMinAndMax(new int[]{120,246,356,432,555,697,702,840,999});
+        System.out.println("\n\nEx4:\n");
+
+        //4. Creati o metoda care sa inverseze valorile unui array de int-uri.
+
+        int[] note= {8,7,10,5,3,9};
+        int[] noteInversate ;
+        noteInversate = op.reverseArray(note);
+        System.out.println("Array-ul initial este:");
+        op.printArray(note);
+        System.out.println("\nIar array-ul inversat este : ");
+        op.printArray(noteInversate);
+
+        System.out.println("\nEx5:\n");
+
+        //5. Creati o metoda care sa gaseasca toate valorile duplicate dintr-un array.
+
+        System.out.println("Duplicates String in the array are: \n");
+        op.printArrayDuplicated(new String[]{"Avion","Avion","Capusa","Mama","Mama","pe asta vreau sa n-o vad"});
+        System.out.println("\nDuplicates int in the array are:\n");
+        op.printArrayDuplicated(new int[]{1, 2, 3, 4, 5, 4, 5, 6, 6, 7, 8, 9});
+        System.out.println("\nEx6\n");
+
+        //6. Creati o metoda care sa gaseasca toate elementele comune intre doua array-uri (array de String).
+
+        System.out.println("\nEx7:\n");
+
+        //7. Creati o metoda care sa primeasca un array de numere ne-ordonat, si sa il returneze ordonat crescator.
+
+        op.sortArray(new int[]{9,4,6,8,3,7,1,10,5,2});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
