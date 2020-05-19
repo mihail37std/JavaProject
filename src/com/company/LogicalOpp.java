@@ -347,6 +347,23 @@ public class LogicalOpp {
         }
     }
 
+    public void similarValues (String[] firstArray, String[] secondArray)  {
+        System.out.println("The array's are : ");
+        System.out.println(Arrays.toString(firstArray));
+        System.out.println(Arrays.toString(secondArray));
+        System.out.println("And the similar values are : ");
+
+        for (int i = 0; i < firstArray.length; i++){
+
+            for (int j = 0; j < secondArray.length; j++) {
+
+                if (firstArray[i].equals(secondArray [j])) {
+                    System.out.print (firstArray[i] + " ");
+                }
+            }
+        }
+    }
+
     public void insertElementInArray (int[] array, int index, int nr){
         System.out.println("Original Array : "+Arrays.toString(array));
 

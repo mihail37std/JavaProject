@@ -478,7 +478,10 @@ public class Main {
 
         //6. Creati o metoda care sa gaseasca toate elementele comune intre doua array-uri (array de String).
 
-        System.out.println("\nEx7:\n");
+        String[] first = {"ford" , "lambo", "vw" , "BMW" , "opel"};
+        String[] second = {"vw", "BMW" , "Tesla"};
+        op.similarValues(first, second);
+        System.out.println("\n\nEx7:\n");
 
         //7. Creati o metoda care sa primeasca un array de numere ne-ordonat, si sa il returneze ordonat crescator.
 
