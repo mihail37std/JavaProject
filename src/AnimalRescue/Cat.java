@@ -12,6 +12,14 @@ public class Cat extends Animal {
         this.chipNr = chipNr;
     }
 
+    public void eat(){
+        System.out.println("eating cat's food ");
+    }
+
+    public void speak(){
+        System.out.println("Meow!");
+    }
+
 
     public void play(){
         System.out.println("Playing with the clew");

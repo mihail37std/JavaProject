@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class AnimalRescuer {
+public class Rescuer {
 
     private String name;
     private int age;
@@ -57,7 +57,6 @@ public class AnimalRescuer {
         this.eyes = eyes;
     }
 
-
     public String getGender (){
         return gender;
     }
@@ -65,11 +64,20 @@ public class AnimalRescuer {
         this.gender = gender;
     }
 
+
+    public void callVeterinarian(){
+        System.out.println("Call the vet");
+    }
+
+    public void buyFood(){
+        System.out.println("buying food");
+    }
+
     public void play(){
         System.out.println("Playing...");
     }
-    public void rescue (){
-        System.out.println("Rescuing...");
+    public void adopt (){
+        System.out.println("Adopting...");
     }
 
     public void feed (){

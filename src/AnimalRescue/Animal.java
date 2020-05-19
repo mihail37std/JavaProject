@@ -111,6 +111,7 @@ public class Animal {
         this.favActivity = favActivity;
     }
 
+
     public void eat(){
         System.out.println("Eating..");
     }
@@ -134,6 +135,10 @@ public class Animal {
 
     public void fearsDoctors (){
         System.out.println("fears the doctor");
+    }
+
+    public void speak () {
+        System.out.println("Said something....");
     }
 
 

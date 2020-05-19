@@ -221,24 +221,24 @@ public class LogicalOpp {
         System.out.println("\n");
     }
 
-    public int[] getArrayEven(int[] array) {
-        for (int i = 0; i < 100; i++) {
-            array[i] = i + 1;
-            if (array[i] % 2 == 0) {
-                System.out.print(array[i]+" ");
+    public int[] getArrayEven() {
+        int [] array = new int[100];
+        int [] arrayEven = new int[50];
+        for (int i = 1, j=0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                arrayEven[j]=i;
+                j++;
             }
         }
-        return array;
+        return arrayEven;
     }
 
     public double getArrayAvarage(int[] array) {
         double sum = 0;
-        int count = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
-            count += 1;
         }
-        return sum / count;
+        return sum / array.length;
     }
 
     public boolean checkStringInAString(String[] myStringArray, String strSimplu) {

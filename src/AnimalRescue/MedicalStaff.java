@@ -42,8 +42,6 @@ public class MedicalStaff {
 
 
 
-
-
     public void consult (){
         System.out.println("Consulting ....");
     }

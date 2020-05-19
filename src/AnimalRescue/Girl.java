@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Girl extends AnimalRescuer{
+public class Girl extends Rescuer {
 
     private long buget;
 
@@ -14,14 +14,24 @@ public class Girl extends AnimalRescuer{
 
 
 
-    public void buy (){
-        System.out.println("Buying food");
+    public void buyFood (){
+        System.out.println("Buying dog's food");
     }
 
 
-    public void goToVet (){
-        System.out.println("go to vet...");
+    public void callVeterinarian (){
+        System.out.println("Call the vet for an appointment for the dog");
     }
+
+    public void walkDog (){
+        System.out.println("Girl walking dog");
+    }
+
+    public void takesPetToVet(){
+        System.out.println("taking dog to the vet ");
+    }
+
+
 
 
 

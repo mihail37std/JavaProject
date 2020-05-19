@@ -382,8 +382,8 @@ public class Main {
          Apelati metoda in main() pentru a verifica daca functioneaza.
         Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla. */
 
-        int[] arrayEven = new int[100];
-        op.getArrayEven(arrayEven);
+
+        op.printArray(op.getArrayEven());
         System.out.println("\n\nEx 4: \n");
 
         /*4. Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori.
@@ -406,7 +406,7 @@ public class Main {
         si un parametru de tip numar. Metoda sa verifice daca numarul primit se afla in array-ul primit,
         si daca da, atunci sa returneze pozitia pe care se afla numarul. */
 
-        System.out.println(op.checkArrayPosition(new int[]{3, 4, 5, 10, 8, 9},11));
+        System.out.println(op.checkArrayPosition(new int[]{3, 4, 5, 10, 8, 9},5));
         System.out.println("\nEx 7:\n");
 
         //7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:

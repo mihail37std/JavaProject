@@ -41,8 +41,16 @@ public class Dog extends Animal {
 
 
 
-    public void bark(){
+    public void speak(){
         System.out.println("wouf wouf");
+    }
+
+    public void eat(){
+        System.out.println("Eating Dog's food");
+    }
+
+    public void run(){
+        System.out.println("running to catch cats");
     }
 
     public void chaseCats (){

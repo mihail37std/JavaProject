@@ -14,6 +14,22 @@ public class Veterinarian extends MedicalStaff{
     }
 
 
+    public void consult (){
+        System.out.println("Consulting the animal");
+    }
+
+    public void treats(){
+        System.out.println("Treats the animal");
+    }
+
+    public void giveInjection () {
+        System.out.println("Gives injection..");
+    }
+
+    public void performSurgery (){
+        System.out.println("Performing surgery on animal");
+    }
+
     public void prescribeRecipes (){
         System.out.println("Prescribe recipes....");
     }
