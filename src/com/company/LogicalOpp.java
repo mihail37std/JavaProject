@@ -376,26 +376,26 @@ public class LogicalOpp {
     //Lab 14 Java Lists
 
     //Ex1:
-    public void printList (List lista){
+    public void printList (List<Integer> lista){
         for (int i=0 ; i<lista.size(); i++){
             System.out.println(lista.get(i));
         }
     }
 
     //Ex2:
-    public void addFinalNumberToList(List lista, int nr){
+    public void addFinalNumberToList(List<Integer>lista, int nr){
         lista.add(nr);
     }
 
     //Ex3:
-    public void printListFromIndex(List lista, int parametru){
+    public void printListFromIndex(List<Integer> lista, int parametru){
         for (int i=parametru ; i<lista.size(); i++){
             System.out.println(lista.get(i));
         }
     }
 
     //Ex4:
-    public void printListBackwards (List lista){
+    public void printListBackwards (List<Integer> lista){
         for (int i=lista.size()-1 ; i>=0 ; i--){
             System.out.println(lista.get(i));
         }
@@ -407,12 +407,12 @@ public class LogicalOpp {
     }
 
     //Ex6:
-    public void addFirstNrtoList(List lista, int nr){
+    public void addFirstNrtoList(List<Integer> lista, int nr){
         lista.add(0,nr);
     }
 
     //Ex7:
-    public void printListWithNrAndPosition (List lista){
+    public void printListWithNrAndPosition (List<Integer> lista){
         for (int i=0 ; i<lista.size(); i++){
             System.out.println("Pe pozitia "+(i+1)+" valoarea este: "+lista.get(i));
         }
@@ -420,7 +420,7 @@ public class LogicalOpp {
     }
 
     //Ex8:
-    public int maxNrFromList (List lista){
+    public int maxNrFromList (List<Integer> lista){
         int max = 0;
         for (int i=0 ; i<lista.size();i++){
             if ((int)lista.get(i)>max){
@@ -428,6 +428,12 @@ public class LogicalOpp {
             }
         }
         return max;
+    }
+
+    // Tema Optionala List:
+    // Ex 1 :
+    public void swapDwoNumbersInAList (List<Integer> lista){
+
     }
 
 

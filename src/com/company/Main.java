@@ -558,6 +558,11 @@ public class Main {
 
         System.out.println("Cel mai mare numar din lista este: "+op.maxNrFromList(firstIntList));
 
+        System.out.println("\n\n Tema Optionala LIST \n");
+        System.out.println("\nEx1:\n");
+
+        //1.Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista
+        
 
 
 
