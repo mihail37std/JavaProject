@@ -561,7 +561,24 @@ public class Main {
         System.out.println("\n\n Tema Optionala LIST \n");
         System.out.println("\nEx1:\n");
 
-        //1.Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista
+        //1. Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista
+        System.out.println("Orinal list is: "+firstIntList);
+        op.swapDwoNumbersInAList(firstIntList,1,4);
+        System.out.println("And after the swap : "+firstIntList);
+        op.swapDwoNumbersInAList(firstIntList,1,4);
+        System.out.println("\nEx2:\n");
+
+        //2. Scrieti o metoda Java care sa primeasca o Lista si sa returneze o alta lista,
+        // care sa contina doar numerele pare din lista primita.
+
+        op.getOddNumbersFromList(firstIntList);
+        System.out.println("\nEx3:\n");
+
+        //3. Scrieti o metoda Java care sa primeasca parametru o Lista nesortata, si sa returneze
+        // Lista sortata crescator. Atentie, sortarea sa se faca programatic(adica logica sa fie scrisa de voi),
+        // si nu folosit librarie externa, precum Collection.sort().
+
+        op.sortList(firstIntList);
 
 
 

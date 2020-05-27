@@ -432,8 +432,47 @@ public class LogicalOpp {
 
     // Tema Optionala List:
     // Ex 1 :
-    public void swapDwoNumbersInAList (List<Integer> lista){
+    public void swapDwoNumbersInAList (List<Integer> lista,int firstIndex, int secondIndex){
+        int a , b ;
+        a = lista.get(firstIndex);
+        b = lista.get(secondIndex);
+        lista.remove(firstIndex);
+        lista.add(firstIndex, b);
+        lista.remove(secondIndex);
+        lista.add(secondIndex,a);
+    }
 
+    // Ex 2 :
+    public void getOddNumbersFromList (List<Integer> lista){
+        List<Integer> oddList = new ArrayList<Integer>();
+        for (int x : lista){
+            if (x%2==0){
+                oddList.add(x);
+            }
+        }
+        System.out.println("The odd numbers from the list you entered are: "+oddList);
+    }
+
+    // Ex 3 :
+    public List<Integer> sortList (List<Integer> lista){
+        for (int i = 0; i < lista.size(); i++) {
+
+            for (int j = lista.size() - 1; j > i; j--) {
+                if (lista.get(i) > lista.get(j)) {
+
+                    int tmp = lista.get(i);
+                    lista.set(i,lista.get(j)) ;
+                    lista.set(j,tmp);
+
+                }
+
+            }
+
+        }
+        for (int i: lista){
+            System.out.println(i);
+        }
+        return lista;
     }
 
 
