@@ -376,7 +376,7 @@ public class LogicalOpp {
     //Lab 14 Java Lists
 
     //Ex1:
-    public void printList (List<Integer> lista){
+    public void printList (List lista){
         for (int i=0 ; i<lista.size(); i++){
             System.out.println(lista.get(i));
         }

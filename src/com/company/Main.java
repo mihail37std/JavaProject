@@ -562,7 +562,7 @@ public class Main {
         System.out.println("\nEx1:\n");
 
         //1.Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista
-        
+
 
 
 
