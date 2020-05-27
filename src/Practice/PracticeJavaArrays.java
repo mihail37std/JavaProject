@@ -132,8 +132,22 @@ public class PracticeJavaArrays {
         System.out.println("\n");
 
 
+        // Tabla Inmultirii
 
-        LogicalOpp opLogic = new LogicalOpp();
+        int[][] tablaInmultirii = new int[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                tablaInmultirii[i][j] = (i + 1) * (j + 1);
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.print("\t" + tablaInmultirii[i][j]);
+            }
+            System.out.println();
+        }
+
 
 
 
@@ -143,4 +157,12 @@ public class PracticeJavaArrays {
 
     }
 }
+
+
+
+
+
+
+
+
 

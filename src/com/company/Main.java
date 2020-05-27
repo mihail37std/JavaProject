@@ -1,7 +1,11 @@
 package com.company;
 
+import java.sql.ClientInfoStatus;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 
 public class Main {
 
@@ -486,6 +490,83 @@ public class Main {
         //7. Creati o metoda care sa primeasca un array de numere ne-ordonat, si sa il returneze ordonat crescator.
 
         op.sortArray(new int[]{9,4,6,8,3,7,1,10,5,2});
+
+
+        System.out.println("\n\n\n    TEMA LAB 14 : JAVA LISTS \n");
+
+        System.out.println("\nEx1:\n");
+        //1. Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand,
+        // toate valorile din lista, fiecare pe rand nou.
+
+        List<Integer> firstIntList = new ArrayList<Integer>();
+        firstIntList.add(2);
+        firstIntList.add(5);
+        firstIntList.add(4);
+        firstIntList.add(1);
+
+        op.printList(firstIntList);
+
+        System.out.println("\nEx2:\n");
+
+        /*2. Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru sa fie o lista de numere,
+        si celalalt un numar (real sau intreg). Metoda sa adauge numarul primit ca si parametru la final de lista.*/
+
+        op.addFinalNumberToList(firstIntList, 55);
+        op.printList(firstIntList);
+        System.out.println("\nEx3:\n");
+
+        /*3. Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru de tip Lista,
+        iar celalalt un numar intreg. Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista,
+         fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru. */
+
+        op.printListFromIndex(firstIntList,2);
+        System.out.println("\nEx4:\n");
+        /*4. Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista,
+         dar invers(de la capat la inceput).*/
+
+        op.printListBackwards(firstIntList);
+        System.out.println("\nEx5:\n");
+
+        /*5. Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista de String-uri,
+         unul de tip intreg, si unul de tip String. Metoda sa adauge parametrul de tip String in lista primita,
+         iar parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.*/
+
+        List<String> firstStringList = new ArrayList<String>();
+        firstStringList.add("Andrei");
+        firstStringList.add("Danciulescu");
+        firstStringList.add("Ana Maria");
+
+        op.addStringToList(firstStringList,1,"Nicolae");
+        op.printList(firstStringList);
+
+        System.out.println("\nEx6:\n");
+
+        /*6. Scrieti o metoda Java, care sa primeasca doi parametrii. Primul dintre ei va fi o Lista,
+        iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista. */
+
+        op.addFirstNrtoList(firstIntList,10);
+        op.printList(firstIntList);
+        System.out.println("\nEx7:\n");
+
+        /*7. Scrieti o metoda Java care sa primeasca parametru o Lista, si sa afiseze ce valori are lista,
+        si ce pe ce pozitie. (Ex: “Pe pozitia 1 valoare este 4”)*/
+
+        op.printListWithNrAndPosition(firstIntList);
+        System.out.println("\nEx8:\n");
+
+        //8. Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
+
+        System.out.println("Cel mai mare numar din lista este: "+op.maxNrFromList(firstIntList));
+
+
+
+
+
+
+
+
+
+
 
 
 
