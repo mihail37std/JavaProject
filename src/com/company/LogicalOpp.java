@@ -475,6 +475,28 @@ public class LogicalOpp {
         return lista;
     }
 
+    //Tema Try-Catch
+
+   //Ex5:
+    public void displayNumberFromArray (int[] array, int position){
+        try {
+            System.out.println("Numarul de pe pozitia "+(position+1)+" este: "+array[position]);
+        } catch (IndexOutOfBoundsException e){
+            System.out.println("Inside catch, number too large");
+        }
+    }
+
+    //Ex6:
+    public void waitTwo (int secWait) {
+        try {
+            Thread.sleep(secWait*1000);
+            System.out.println("You waited " + secWait + " seconds");
+        } catch (InterruptedException e) {
+            System.out.println("Time out");
+        }
+    }
+
+
 
 
 

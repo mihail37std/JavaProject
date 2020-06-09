@@ -521,6 +521,7 @@ public class Main {
 
         op.printListFromIndex(firstIntList,2);
         System.out.println("\nEx4:\n");
+
         /*4. Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista,
          dar invers(de la capat la inceput).*/
 
@@ -579,6 +580,70 @@ public class Main {
         // si nu folosit librarie externa, precum Collection.sort().
 
         op.sortList(firstIntList);
+        System.out.println("\n\n     TEMA LAB 15 ERROR HANDLING\n\n");
+
+        System.out.println("Ex1:\n");
+
+        //1. In clasa Read, din programul vostru, creati o metoda tratat, care sa returneze un numar de la tastatura.
+
+        Read read = new Read();
+        int inputInt = read.getInt();
+       System.out.println("\nEx2:");
+
+        //2. In clasa Read, duplicati metoda de la punctul 1, astfel incat sa aveti mai multe metode,
+        // care sa citeasca si sa returneze si alte tipuri de numere (float, int, double, long, etc)
+
+        double inputDouble = read.getDouble();
+        float  inputFloat = read.getFloat();
+        long inputLong = read.getLong();
+        byte inputString = read.getByte();
+        System.out.println("\nEx3:");
+
+        //3. In clasa Read, creati o metoda care sa returneze un array de numere populat de la tastatura.
+        // Metoda sa primeasca ca si parametru un numar, care reprezinta cate pozitii are.
+
+       read.returnArrayWithInputNumbers(3);
+        System.out.println("\nEx4:");
+
+       /*4. In clasa Read, creati o metoda care sa returneze o lista de numere populate de la tastatura.
+       Metoda nu v-a primii parametru lungimea. In rezolvarea ei trebuie folosit try-catch.
+       (Hint: a se citi de la tastatura atata timp cat valoarea primita e numar, cand nu mai e numar,
+       sa se intrerupa citirea) */
+
+        read.getList();
+        System.out.println("\nEx5:\n");
+
+        /*5. In clasa LogicalOp, creati o metoda care sa primeasca un array de numere ca si parametru,
+        si un numar. Fara a folosi conditii, si folosind un try-catch, afisati valoarea de pe pozitia
+        numarului primit, iar daca valoarea numarului este mai mare decat numarul de pozitii din array,
+        afisati textul: "Inside catch, number too large".*/
+
+        int[] ex5Array = {12,13,14,15,16};
+        op.displayNumberFromArray(ex5Array,10);
+        System.out.println("\nEx6:");
+
+        /*6. In clasa LogicalOp, creati o metoda  'wait()'. Metoda sa nu returneze nimic,
+         dar sa primeasca un parametru de tip int. In interiorul ei, tratati metoda Thread.sleep(),
+         astfel incat metoda noastra sa primeasca valoarea in secunde, cat sa astepte.
+         Ex: wait(5) -> asteapta 5 secunde. */
+
+        op.waitTwo(5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
