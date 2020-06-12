@@ -596,7 +596,8 @@ public class Main {
         double inputDouble = read.getDouble();
         float  inputFloat = read.getFloat();
         long inputLong = read.getLong();
-        byte inputString = read.getByte();
+        byte inputByte = read.getByte();
+        String inputString = read.getString();
         System.out.println("\nEx3:");
 
         //3. In clasa Read, creati o metoda care sa returneze un array de numere populat de la tastatura.

@@ -490,7 +490,6 @@ public class LogicalOpp {
     public void waitTwo (int secWait) {
         try {
             Thread.sleep(secWait*1000);
-            System.out.println("You waited " + secWait + " seconds");
         } catch (InterruptedException e) {
             System.out.println("Time out");
         }

@@ -13,14 +13,13 @@ public class Read {
         do {
             try {
                 Scanner scan = new Scanner(System.in);
-                System.out.print("Enter a number (int) : ");
+                System.out.print("Enter a number: ");
                 myInt = scan.nextInt();
                 test = false;
             } catch (InputMismatchException e){
                 System.out.println("Incorrect value entered. Please try again ");
             }
         } while (test);
-        System.out.println("The number you entered is: "+myInt);
         return myInt;
     }
 
@@ -31,14 +30,13 @@ public class Read {
         do {
             try {
                 Scanner scan = new Scanner(System.in);
-                System.out.print("Enter a decimal number (double) : ");
+                System.out.print("Enter a decimal number: ");
                 myDouble = scan.nextDouble();
                 test = false;
             } catch (InputMismatchException e){
                 System.out.println("Incorrect value entered. Please try again ");
             }
         } while (test);
-        System.out.println("The decimal number you entered is: "+myDouble);
         return myDouble;
     }
 
@@ -48,14 +46,13 @@ public class Read {
         do {
             try {
                 Scanner scan = new Scanner(System.in);
-                System.out.print("Enter a float number : ");
+                System.out.print("Enter a float number: ");
                 myFloat = scan.nextFloat();
                 test = false;
             } catch (InputMismatchException e){
                 System.out.println("Incorrect value entered. Please try again ");
             }
         } while (test);
-        System.out.println("The float number you entered is: "+myFloat);
         return myFloat;
     }
 
@@ -72,7 +69,6 @@ public class Read {
                 System.out.println("Incorrect value entered. Please try again ");
             }
         } while (test);
-        System.out.println("The long number you entered is: "+myLong);
         return myLong;
     }
 
@@ -89,8 +85,12 @@ public class Read {
                 System.out.println("Incorrect value entered. Please try again ");
             }
         } while (test);
-        System.out.println("The small number you entered is: "+myByte);
         return myByte;
+    }
+
+    public String getString(){
+        Scanner scanner= new Scanner(System.in);
+        return scanner.next();
     }
 
     //Ex3:
