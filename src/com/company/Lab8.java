@@ -3,10 +3,11 @@ package com.company;
 public class Lab8 {
 
     public static void main(String[] args) {
-        System.out.println("\nHello there");
+        System.out.println("\n  Hello there\n");
         Program program = new Program();
-        program.startProgram();
-
+        if(program.loginWithHashMap()){
+            program.startProgram();
+        }
 
 
 

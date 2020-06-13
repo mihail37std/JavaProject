@@ -181,7 +181,6 @@ public class Calculator {
             x++;
         }
         float average = sum/count;
-        System.out.print("Media numerelor din intervalul selectat este: ");
         return  average;
 
     }
@@ -225,6 +224,16 @@ public class Calculator {
                 i++;
 
         }
+    }
+
+    public static double transFinC(int x) {
+        double gradeC = (x - 32) * 5.0 / 9;
+        return gradeC;
+    }
+
+    public static double transfInchM(double x) {
+        double distMetri = x / 39.370;
+        return distMetri;
     }
 
 

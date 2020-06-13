@@ -23,6 +23,22 @@ public class Read {
         return myInt;
     }
 
+    public int getAge (){
+        boolean test = true;
+        byte age = 0 ;
+        do {
+            try {
+                Scanner scan = new Scanner(System.in);
+                System.out.print("Enter you're age: ");
+                age = scan.nextByte();
+                test = false;
+            } catch (InputMismatchException e){
+                System.out.println("Incorrect value entered. Please try again ");
+            }
+        } while (test);
+        return age;
+    }
+
     //Ex2:
     public double getDouble (){
         boolean test = true;

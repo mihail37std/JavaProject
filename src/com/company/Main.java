@@ -114,13 +114,13 @@ public class Main {
         care sa reprezinte temperatura in Fahrenheit, si sa returneze temperatura in Celsius.
          */
 
-        System.out.println("transformarea din F in grade C este: " + transFinC(32));
+        System.out.println("transformarea din F in grade C este: " + calc.transFinC(32));
 
         /* 8.Scrieti o metoda java, care sa primeasca ca si parametru un numar real,
         care sa reprezinte distanta in inch, si sa returneze distanta in metrii
          */
 
-        System.out.println("Transformarea din INCh in m este: " + transfInchM(-49.56) + " m " + "\n");
+        System.out.println("Transformarea din INCh in m este: " + calc.transfInchM(-49.56) + " m " + "\n");
 
         /*9. Scrieti o metoda java, care primeste distanta (in metrii) si timpul
         (ca si 3 numere: ore, minute, secunde), si afiseaza viteza, in metrii
@@ -140,7 +140,7 @@ public class Main {
 
         int biggest = op.getHigherNumber(2, 3);
 
-        System.out.println("The bigger number is: " + biggest);
+        System.out.println("The greater number number is: " + biggest);
 
         /*4. Creati o metoda de tip String, care sa primeasca un parametru de tip String.
         // Verificati daca textul ce vine ca si parametru este egal cu “FastTrackIT”.
@@ -759,17 +759,6 @@ public class Main {
         System.out.println(d);
     }
 
-
-    public static double transFinC(int x) {
-        double gradeC = (x - 32) * 5.0 / 9;
-        return gradeC;
-    }
-
-    public static double transfInchM(double x) {
-        double distMetri = x / 39.370;
-        return distMetri;
-    }
-
     public static void myRobot() {
         String robotel = "   +\" \" \" \" \"+\n" +
                 "  [|  o   o  |]\n" +
@@ -777,7 +766,6 @@ public class Main {
                 "   |   '_'   |\n" +
                 "   +_ _ _ _ _+";
         System.out.println(robotel);
-
     }
 
 
