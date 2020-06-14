@@ -143,13 +143,13 @@ public class Read {
         int x = 0 ;
         do {
             try {
-                System.out.print("Introduceti numarul dorit : ");
+                System.out.print("Enter a number : ");
                 Scanner scan = new Scanner(System.in);
                 x = scan.nextInt();
                 lista.add(x);
             } catch (InputMismatchException e){
                 stop = false ;
-                System.out.println("Lista dvs este "+lista);
+                System.out.println("You're list is: "+lista);
             }
         } while ((x> Integer.MIN_VALUE) && (x<Integer.MAX_VALUE) && stop);
 

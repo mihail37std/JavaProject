@@ -1,12 +1,15 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class Program {
      private Read read = new Read();
      private Calculator calc = new Calculator();
      private LogicalOpp op = new LogicalOpp();
      private HashMap<String, String> users;
+
 
     private void initUsers() {
         users= new HashMap<String, String>();
@@ -55,6 +58,14 @@ public class Program {
          } while (repetLogical);
      }
 
+     private void startList(){
+        boolean repetList;
+        do{
+            repetList = executeList();
+            op.waitTwo(2);
+        } while (repetList);
+     }
+
      private boolean executeProgram(){
          printMenu();
          int number = read.getInt();
@@ -64,6 +75,9 @@ public class Program {
                  break;
              case 2:
                  startLogical();
+                 break;
+             case 3:
+                 startList();
                  break;
              case 0:
                  System.out.println("Thanks for using my little program. Bye, bye ! ");
@@ -165,10 +179,47 @@ public class Program {
          } return true;
      }
 
+    private boolean executeList(){
+        System.out.println("\nEnter list values.");
+        List<Integer> myList = new ArrayList<>(read.getList());
+        printListMenu();
+        int number = read.getInt();
+        switch (number){
+            case 1:
+                int number1 = read.getInt();
+                op.addFinalNumberToList(myList,number1);
+                System.out.println(myList);
+                break;
+            case 2:
+                int number2 = read.getInt();
+                op.addFirstNrtoList(myList,number2);
+                System.out.println(myList);
+                break;
+            case 3:
+                op.printListBackwards(myList);
+                break;
+            case 4:
+                op.getOddNumbersFromList(myList);
+                break;
+            case 5:
+                op.sortList(myList);
+            case 6:
+                System.out.println("The higher number from you're list is: "
+                        +op.maxNrFromList(myList));
+                break;
+            case 0:
+                return false ;
+            default:
+                System.out.print("Wrong value");
+        } return true;
+    }
+
      private void printMenu(){
          System.out.println("\nChoose a category:\n"+
                  "1.Mathematical operations\n"+
                  "2.Logical operation\n"+
+                 "3.List\n"+
+                 "\n"+
                  "0.EXIT Program\n");
      }
 
@@ -207,6 +258,18 @@ public class Program {
                 "0.Return to Main Menu");
     }
 
+
+    private void printListMenu(){
+        System.out.println("1.Add a number to the final of you're list\n"+
+                "2.Add a number to the begining of you're list \n"+
+                "3.Show list backwords\n"+
+                "4.Show all odd numbers from the list\n"+
+                "5.Sort list\n"+
+                "6.Get higher number from list\n"+
+                "\n"+
+                "0.Return to Main Menu\n" );
+    }
+
     public boolean simpleLogin() {
         for (int i = 0; i < 3; i++) {
             System.out.print("Enter your username: ");
@@ -237,11 +300,12 @@ public class Program {
         int number = read.getInt();
         System.out.println(op.verifyNumber(number));
     }
-     private void checkFastTrackIT(){
+
+    private void checkFastTrackIT(){
          System.out.println("Enter the text.");
          String str = read.getString();
          System.out.println(op.checkTextFastTrack(str));
-     }
+    }
 
     private void getHigherNumber2(){
         System.out.println("Enter tree values.");
@@ -251,108 +315,107 @@ public class Program {
         System.out.println("The greater number is: "+op.biggestNumber(first,second,third));
     }
 
-     private void getHigherNumber(){
+    private void getHigherNumber(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The greater number is: "+op.getHigherNumber(first,second));
-     }
+    }
 
-     private void transFinC(){
+    private void transFinC(){
          int number = read.getInt();
          System.out.println(number+"°F is: "+calc.transFinC(number)+"°C");
-     }
+    }
 
-     private void transInchToM(){
-         double number = read.getInt();
-         System.out.println(number+" inches are: "+calc.transfInchM(number)+" meters");
-     }
+    private void transInchToM() {
+        double number = read.getInt();
+        System.out.println(number + " inches are: " + calc.transfInchM(number) + " meters");
+    }
 
-     private void doSum(){
+    private void doSum(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The sum is: " + calc.adunare(first,second));
-     }
+    }
 
-     private void doSubstraction(){
+    private void doSubstraction(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The substraction is: " + calc.scadere(first,second));
-     }
+    }
 
-     private void doDivision(){
+    private void doDivision(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The division is: " + calc.impartire(first,second));
-     }
+    }
 
-     private void doMultiply(){
+    private void doMultiply(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The multiply is: " + calc.inmultire(first,second));
-     }
+    }
 
-     private void doAverage(){
+    private void doAverage(){
          System.out.println("Enter three values.");
          int first = read.getInt();
          int second = read.getInt();
          int third = read.getInt();
          System.out.println("The average is: " + calc.mediaAtreiNumere(first,second,third));
-     }
+    }
 
-     private void getRemeinder(){
+    private void getRemeinder(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The remeinder of integer division is: "+calc.restulImpartirii(first,second));
-     }
+    }
 
-     private void countXtoY(){
+    private void countXtoY(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.print("The count from "+first+" to "+second+" is: ");
          calc.countXtoY2(first,second);
-     }
+    }
 
-     private void countTo100(){
+    private void countTo100(){
          int number = read.getInt();
          System.out.print("The count from "+number+" to 100 is :");
          calc.countTo100(number);
-     }
+    }
 
-     private void countToMinus100() {
+    private void countToMinus100() {
          int number = read.getInt();
          System.out.print("The count from " + number + " to -100 is :");
          calc.countToMinus100(number);
-     }
+    }
 
-     private void evenNumbers(){
+    private void evenNumbers(){
          System.out.println("All even numbers from 1 to 100 are: ");
          calc.whileEven();
-     }
+    }
 
-     private void oddNumbers(){
+    private void oddNumbers(){
          System.out.println("All odd numbers from 1 to 100 are: ");
          calc.whileOdd();
-     }
+    }
 
-     private void averageSeven(){
+    private void averageSeven(){
          System.out.println("Enter two values.");
          int first = read.getInt();
          int second = read.getInt();
          System.out.println("The average is : "+calc.whilePrime7(first,second));
-     }
+    }
 
-     private void printTwentyNumbersFromFibonacci(){
+    private void printTwentyNumbersFromFibonacci(){
          System.out.println("First 20 numbers from Fibonacci sequence are:");
          calc.fibonacci();
-     }
-
+    }
 
  }
 
